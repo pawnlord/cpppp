@@ -21,6 +21,9 @@ for s in lines:
 
 print("++++++++++++++++++++++++BUILDING++++++++++++++++++++++++")
 for s in purged_lines:
-    print(s)
+    if "error:" in s:
+        print("\033[31merror:\033[0m".join(s.split("error:")))
+    else:
+        print(s)
 
 print("------------------------FINISHED------------------------")
