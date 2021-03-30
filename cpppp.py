@@ -18,5 +18,9 @@ for s in lines:
         purging_lines = True
         purged_lines = purged_lines[:-1]
     last_line = s
+
+print("++++++++++++++++++++++++BUILDING++++++++++++++++++++++++")
 for s in purged_lines:
     print(s)
+
+print("------------------------FINISHED------------------------")
